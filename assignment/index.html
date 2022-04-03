@@ -3,12 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&family=Titillium+Web:ital,wght@0,200;0,400;0,900;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <!-- Incorporating the JS file -->
+    <script src="helloWorld.js"></script>
     <!-- Change the <title> from "Page Title" to "Hello World" -->
     <title>Hello World</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <!-- Incorporating the JS file -->
-    <script scr="helloWorld.js"></script>
 </head>
 <body>
     <!-- Create a header element  -->
@@ -20,24 +26,27 @@
 
     <!-- Include an image -->
     <div class="container">
-        <picture>
-            <img src="../images/Circle-icons-cloud-128px.png" alt="A Pretty Cloud Icon;
+        <div class="img-container flex-center">
+            <!-- Cloud icons from: https://commons.wikimedia.org/wiki/File:Circle-icons-cloud.svg -->
+            <img src="../images/Circle-icons-cloud-256px.png" alt="A Pretty Cloud Icon;
             Only shows as a blue question mark in Safari for some reason..."/>
-        </picture>
+        </div>
 
     <!-- Create an unordered list with 3 list items of fun facts about you -->
-        <ul class="info-list">
-            <li>Passionate about meteorology</li>
-            <li>Avid cyclist</li>
-            <li>Have found Apple computers and their OS to be <b>INCREDIBLY</b> frustrating and unintiutive. Like, holy smokes, all my ambition was zapped by trying to perform simple tasks on a Mac...</li>
-        </ul>
+        <div class="list-container flex-center">
+            <ul class="info-list">
+                <li>Passionate about meteorology</li>
+                <li>Avid cyclist</li>
+                <li>Have found Apple computers and their OS to be <b>INCREDIBLY</b> frustrating and unintiutive. Like, holy smokes, how is it so difficult to simply highlight text without pulling up a dictionary...</li>
+            </ul>
+        </div>
     </div>
 
 
     <!-- Create a footer element -->
     <footer>
     <!-- Inside your footer, put a <p> element with your favorite quote -->
-        <p>"Replace your expectations with averages." -Unknown</p>
+        <p class="quote"><q>Replace your expectations with averages.</q> -Unknown</p>
     </footer>
 </body>
 </html>

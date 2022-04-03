@@ -2,20 +2,56 @@
 
 # 1 - What is the command for listing the files in the current folder (directory)?
 
+--- The command is `ls` (can also use `ls -la` to view hidden files)
+
+
 # 2 - What is the command for changing directories?
+
+--- Use `cd <dir-name>` to move into a directory.
+--- --- If you begin typing, you can use TAB to auto-complete the directory name.
+
 
 # 3 - What is the command for going "up" a folder (to a parent directory)?
 
+--- You can do `cd ..` to navigate up exactly one (1) directory.
+--- --- Move multiple directories by chaining together `/..` after the initial `cd ..` 
+
+
 # 4 - What is a quick way to create a new folder?
+
+--- Use the command line phrase `mkdir <dir-name>` to quickly create a new directory in the current folder
+
 
 # 5 - What output would you expect when you run the command 'ls' in an empty folder? What about a folder containing files?
 
+--- The response should be blank as nothing exists in the empty directory.
+
+
 # 6 - What is a quick way to create a new file?
+
+--- Use the `touch <filename>.<extension>` command to quickly create a new file.
+
 
 # 7 - Run 'git --version' in your terminal. What is the output?
 
+--- That command outputs the current locally utilized version of GIT.
+--- --- My computer gives the response `git version 2.15.0`
+
+
 # 8 - Why would you run the command 'git status'?
+
+--- That status allows users to track if any files have been modified, deleted, or are untracked.
+--- --- It is a quick way for users to verify if their work is being properly tracked and updated via GIT
+
 
 # 9 - What does the command 'git add .' do?
 
+--- By specifying the `.` in that command, GIT will automatically stage ALL files within the working directory for tracking.
+--- --- If you only want to track specific files, you will need to either list those files specifically seperated with a space,
+--- --- or add the files you do NOT want to track into the `.gitignore` file.
+
+
 # 10 - What is the command to push your committed changes to your repo on GitHub?
+
+--- To upload the committed files to GitHub, issue the command `git push origin <branch-name>`
+--- ---  Currently working on the `main` branch for this project, so that command would be `git push origin main`
